@@ -67,8 +67,8 @@
             <section class="sticky top-0 bg-white z-50 w-full pb-3">
                 <section class="max-w-screen-xl mx-auto flex justify-between pt-3">
                     <div class="flex justify-between w-full md:w-auto items-center">
-                        <div class="w-[185px] h-[50px]">
-                            <img src="{{ asset('images/logo.png') }}" alt="" class="pl-3 lg:pl-0 h-[100%]">
+                        <div class="w-[185px]">
+                            <img src="{{ asset('images/logos.svg') }}" alt="">
                         </div>
                         <button type="button" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 md:hidden" x-on:click="open = !open">Menu</button>
                     </div>
@@ -94,7 +94,7 @@
                 </section>
             </section>
     
-            <section class="absolute w-full top-full z-50 md:hidden">
+            <section class="absolute w-full top-full z-50">
                 <section>
                     <nav class="bg-[#223f77] transition-max-height duration-300 ease-in-out overflow-hidden max-h-0" :class="{'max-h-screen': open}">
                         <ul>
@@ -298,13 +298,13 @@
 
         <section class="max-w-screen-xl mx-auto mt-5 mb-5 flex justify-center px-10">
             <div class="wrapper">
-                <i id="left" class="buttons fa-solid fa-angle-left z-50 bg-[#305AAB]"></i>
+                <i id="left" class="buttons fa-solid fa-angle-left z-50"></i>
                 <ul class="carousel">
                     
                     <li class="card pb-2">
                         <div class="relative z-0">
                             <img src="{{ asset('images/slider.jpg') }}" alt="img" >
-                            <div class="absolute bottom-[-20px] w-[calc(100%-40px)] bg-[#2EA2CC] left-1/2 translate-x-[-50%] py-2 px-4 text-white flex justify-between">
+                            <div class="absolute bottom-[-20px] w-[calc(100%-40px)] bg-[#305AAB] left-1/2 translate-x-[-50%] py-2 px-4 text-white flex justify-between">
                                 <ul class="text-xs text-white w-full flex flex-row justify-between h-5 items-center">
                                     <li class="cursor-pointer"><i class="fa-regular fa-clock mr-1"></i> 4D/3N</li>
                                     <li class="border-l border-solid border-white border-[px] h-full"></li>
@@ -325,7 +325,7 @@
                     <li class="card pb-2">
                         <div class="relative z-0">
                             <img src="{{ asset('images/slider.jpg') }}" alt="img" >
-                            <div class="absolute bottom-[-20px] w-[calc(100%-40px)] bg-[#2EA2CC] left-1/2 translate-x-[-50%] py-2 px-4 text-white flex justify-between">
+                            <div class="absolute bottom-[-20px] w-[calc(100%-40px)] bg-[#305AAB] left-1/2 translate-x-[-50%] py-2 px-4 text-white flex justify-between">
                                 <ul class="text-xs text-white w-full flex flex-row justify-between h-5 items-center">
                                     <li class="cursor-pointer"><i class="fa-regular fa-clock mr-1"></i> 4D/3N</li>
                                     <li class="border-l border-solid border-white border-[px] h-full"></li>
@@ -346,7 +346,7 @@
                     <li class="card pb-2">
                         <div class="relative z-0">
                             <img src="{{ asset('images/slider.jpg') }}" alt="img" >
-                            <div class="absolute bottom-[-20px] w-[calc(100%-40px)] bg-[#2EA2CC] left-1/2 translate-x-[-50%] py-2 px-4 text-white flex justify-between">
+                            <div class="absolute bottom-[-20px] w-[calc(100%-40px)] bg-[#305AAB] left-1/2 translate-x-[-50%] py-2 px-4 text-white flex justify-between">
                                 <ul class="text-xs text-white w-full flex flex-row justify-between h-5 items-center">
                                     <li class="cursor-pointer"><i class="fa-regular fa-clock mr-1"></i> 4D/3N</li>
                                     <li class="border-l border-solid border-white border-[px] h-full"></li>
@@ -367,7 +367,7 @@
                     <li class="card pb-2">
                         <div class="relative z-0">
                             <img src="{{ asset('images/slider.jpg') }}" alt="img" >
-                            <div class="absolute bottom-[-20px] w-[calc(100%-40px)] bg-[#2EA2CC] left-1/2 translate-x-[-50%] py-2 px-4 text-white flex justify-between">
+                            <div class="absolute bottom-[-20px] w-[calc(100%-40px)] bg-[#305AAB] left-1/2 translate-x-[-50%] py-2 px-4 text-white flex justify-between">
                                 <ul class="text-xs text-white w-full flex flex-row justify-between h-5 items-center">
                                     <li class="cursor-pointer"><i class="fa-regular fa-clock mr-1"></i> 4D/3N</li>
                                     <li class="border-l border-solid border-white border-[px] h-full"></li>
@@ -388,7 +388,7 @@
                     <li class="card pb-2">
                         <div class="relative z-0">
                             <img src="{{ asset('images/slider.jpg') }}" alt="img" >
-                            <div class="absolute bottom-[-20px] w-[calc(100%-40px)] bg-[#2EA2CC] left-1/2 translate-x-[-50%] py-2 px-4 text-white flex justify-between">
+                            <div class="absolute bottom-[-20px] w-[calc(100%-40px)] bg-[#305AAB] left-1/2 translate-x-[-50%] py-2 px-4 text-white flex justify-between">
                                 <ul class="text-xs text-white w-full flex flex-row justify-between h-5 items-center">
                                     <li class="cursor-pointer"><i class="fa-regular fa-clock mr-1"></i> 4D/3N</li>
                                     <li class="border-l border-solid border-white border-[px] h-full"></li>
@@ -409,7 +409,7 @@
                     <li class="card pb-2">
                         <div class="relative z-0">
                             <img src="{{ asset('images/slider.jpg') }}" alt="img" >
-                            <div class="absolute bottom-[-20px] w-[calc(100%-40px)] bg-[#2EA2CC] left-1/2 translate-x-[-50%] py-2 px-4 text-white flex justify-between">
+                            <div class="absolute bottom-[-20px] w-[calc(100%-40px)] bg-[#305AAB] left-1/2 translate-x-[-50%] py-2 px-4 text-white flex justify-between">
                                 <ul class="text-xs text-white w-full flex flex-row justify-between h-5 items-center">
                                     <li class="cursor-pointer"><i class="fa-regular fa-clock mr-1"></i> 4D/3N</li>
                                     <li class="border-l border-solid border-white border-[px] h-full"></li>
@@ -430,7 +430,7 @@
                     <li class="card pb-2">
                         <div class="relative z-0">
                             <img src="{{ asset('images/slider.jpg') }}" alt="img" >
-                            <div class="absolute bottom-[-20px] w-[calc(100%-40px)] bg-[#2EA2CC] left-1/2 translate-x-[-50%] py-2 px-4 text-white flex justify-between">
+                            <div class="absolute bottom-[-20px] w-[calc(100%-40px)] bg-[#305AAB] left-1/2 translate-x-[-50%] py-2 px-4 text-white flex justify-between">
                                 <ul class="text-xs text-white w-full flex flex-row justify-between h-5 items-center">
                                     <li class="cursor-pointer"><i class="fa-regular fa-clock mr-1"></i> 4D/3N</li>
                                     <li class="border-l border-solid border-white border-[px] h-full"></li>
@@ -540,117 +540,15 @@
         {{-- OTHER SLIDER --}}
     </main>
 
-    <footer class="bg-[#1A1A1A]">
-        <section>
-            <img src="{{ asset('images/footer.jpg') }}" alt="">
-        </section>
-        <section class="max-w-screen-xl mx-auto mt-5 mb-5 pt-5 text-[#e8e8e8]">
-            <section class="flex flex-col md:flex-row items-center md:justify-between md:items-start">
-                
 
-                <div class="mr-8 max-w-[380px] md:max-w-none">
-                    <article>
-                        <h2 class="font-extrabold text-base max-w-[300px] after:content-[''] after:block after:bg-[#74B05F] text-[#74B05F] after:h-[1.5px] after:w-full">CONTACT</h2>
-                        <ul class="leading-loose">
-                            <li class="text-[13px]"><i class="text-[#74B05F] fa-regular fa-envelope mr-2"></i>info@perudestiny.com</li>
-                            <li class="text-[13px]"><i class="text-[#74B05F] fa-solid fa-phone text-[13px] mr-2"></i><span class="font-bold">Office : </span> +51 974 409 679</li>
-                            <li class="text-[13px]"><i class="text-[#74B05F] fa-brands fa-whatsapp text-xl text-[13px] mr-1"></i><span class="font-bold">Sales : </span> +51 974 409 679</li>
-                            <li class="text-[13px]"><i class="text-[#74B05F] fa-brands fa-whatsapp text-xl text-[13px] mr-1"></i><span class="font-bold">Sales : </span> +51 974 409 679</li>
-                            <li class="text-[13px]"><i class="text-[#74B05F] fa-solid fa-phone mr-2"></i><span class="font-bold">Perú : </span> +51 974 409 679</li>
-                            <li class="text-[13px]"><i class="text-[#74B05F] fa-solid fa-phone mr-2"></i><span class="font-bold">24 Hrs assistance : </span> +51 974 409 679</li>
-                        </ul>
-                    </article>
-        
-                    <article>
-                        <h2 class="font-extrabold text-base max-w-[300px] after:content-[''] after:block after:h-[1.35px] after:w-full after:bg-[#74B05F] text-[#74B05F] pt-3">OFFICE HOURS</h2>
-                        <ul class="leading-loose">
-                            <li class="text-[13px]"><i class="text-[#74B05F] mr-2 fa-regular fa-calendar-days"></i></i>Monday to Friday 9:00 - 13:00 hrs & 15:00 - 19:00 hrs</li>
-                            <li class="text-[13px]"><i class="text-[#74B05F] mr-2 fa-regular fa-calendar-days"></i></i>Saturday 9:00 to 13:00 H   and From 17:00 to 19:00 H</li>
-                            <li class="text-[13px]"><i class="text-[#74B05F] mr-2 fa-regular fa-calendar-days"></i></i>Sunday 17:00 to 19:00 H</li>
-                        </ul>
-                    </article>
-        
-                    <article>
-                        <h2 class="font-extrabold text-base max-w-[300px] after:content-[''] after:block after:h-[1px] after:w-full after:bg-[#74B05F] text-[#74B05F] pt-3">SALES TEAM HOURS</h2>
-                        <ul class="leading-loose">
-                            <li class="text-[13px]"><i class="text-[#74B05F] mr-2 fa-regular fa-calendar-days"></i>Monday through Friday 9:00 - 13:00 H & 15:00 - 19:30 H</li>
-                            <li class="text-[13px]"><i class="text-[#74B05F] mr-2 fa-regular fa-calendar-days"></i>Saturday 8:30 - 13:00 H</li>
-                        </ul>
-                    </article>
-                </div>
-
-                <div class="mr-8 max-w-[380px] md:max-w-none">
-                    <article>
-                        <h2 class="font-extrabold text-base max-w-[300px] after:content-[''] after:block after:h-[1.5px] after:w-full after:bg-[#74B05F] text-[#74B05F]">PERU DESTINY OFFICE</h2>
-                        <ul class="leading-loose">
-                            <li class="text-[13px]"><i class="text-[#74B05F] fa-regular fa-envelope mr-1"></i> info@samtravelperu.com</li>
-                            <li class="text-[13px]"><i class="text-[#74B05F] mr-2 fa-solid fa-location-dot"></i> Garcilaso Street 210 , Office Nº:207 (2and Floor) in the la CASA DEL ABUELO shopping center</li>
-                            <li class="text-[13px]">Sunday CLOSED
-                                **All Bookings done during weekends will be confirmed Monday morning.**</li>
-                        </ul>
-                    </article>
-                </div>
-                
-                
-    
-                <div class="hidden md:block mr-8">
-                    <article>
-                        <h2 class="font-extrabold text-base max-w-[300px] after:content-[''] after:block after:h-[1.5px] after:w-full after:bg-[#74B05F] text-[#74B05F] ">DESTINATIONS</h2>
-                        <ul class="leading-loose">
-                            <li class="text-[13px]"><i class="text-[#74B05F] mr-1 fa-solid fa-check"></i> Tours to Machu Picchu</li>
-                            <li class="text-[13px]"><i class="text-[#74B05F] mr-1 fa-solid fa-check"></i> Peru Information, Land of the Incas</li>
-                            <li class="text-[13px]"><i class="text-[#74B05F] mr-1 fa-solid fa-check"></i> Inca Trail</li>
-                            <li class="text-[13px]"><i class="text-[#74B05F] mr-1 fa-solid fa-check"></i> The Imperial City of Cusco</li>
-                            <li class="text-[13px]"><i class="text-[#74B05F] mr-1 fa-solid fa-check"></i> Trekking to Machu Picchu and Other Related Information</li>
-                            <li class="text-[13px]"><i class="text-[#74B05F] mr-1 fa-solid fa-check"></i> Information about Our Salkantay Trek</li>
-                            <li class="text-[13px]"><i class="text-[#74B05F] mr-1 fa-solid fa-check"></i> Lares Trek to Machu Picchu travel guide</li>
-                            <li class="text-[13px]"><i class="text-[#74B05F] mr-1 fa-solid fa-check"></i> Huchuy Qosqo Trek Information 2024</li>
-                            <li class="text-[13px]"><i class="text-[#74B05F] mr-1 fa-solid fa-check"></i> Travel Guide & Information for Choquequirao Trek</li>
-                        </ul>
-                    </article>
-                </div>
-    
-                <div class="hidden md:block">
-                    <article>
-                        <h2 class="font-extrabold text-base max-w-[300px] after:content-[''] after:block after:h-[1.5px] after:w-full after:bg-[#74B05F] text-[#74B05F]">USEFUL INFORMATION</h2>
-                        <ul class="leading-loose">
-                            <li class="text-[13px]"><i class="text-[#74B05F] mr-1 fa-solid fa-check"></i> Terms & Conditions</li>
-                            <li class="text-[13px]"><i class="text-[#74B05F] mr-1 fa-solid fa-check"></i> Terms & Conditions</li>
-                            <li class="text-[13px]"><i class="text-[#74B05F] mr-1 fa-solid fa-check"></i> Emergency Preparation SAM Travel´s Guide</li>
-                            <li class="text-[13px]"><i class="text-[#74B05F] mr-1 fa-solid fa-check"></i> Extra Luggage</li>
-                            <li class="text-[13px]"><i class="text-[#74B05F] mr-1 fa-solid fa-check"></i> Homestay in Pisac</li>
-                            <li class="text-[13px]"><i class="text-[#74B05F] mr-1 fa-solid fa-check"></i> Vistadome or Expedition Train?</li>
-                            <li class="text-[13px]"><i class="text-[#74B05F] mr-1 fa-solid fa-check"></i> Social Projects</li>
-                            <li class="text-[13px]"><i class="text-[#74B05F] mr-1 fa-solid fa-check"></i> Our Clean up Campaign</li>
-                            <li class="text-[13px]"><i class="text-[#74B05F] mr-1 fa-solid fa-check"></i> Empowering Women on the Inca Trail</li>
-                            <li class="text-[13px]"><i class="text-[#74B05F] mr-1 fa-solid fa-check"></i> Personal Porters</li>
-                            <li class="text-[13px]"><i class="text-[#74B05F] mr-1 fa-solid fa-check"></i> Our travel blog</li>
-                            <li class="text-[13px]"><i class="text-[#74B05F] mr-1 fa-solid fa-check"></i> Privacy Policy</li>
-                        </ul>
-                    </article>
-                </div>
-            </section>
-
-            <div class="hidden">
-                <article>
-                    <h2>PAY WITH</h2>
-                    <ul>
-                        <li><i class="fa-regular fa-credit-card"></i> VISA</li>
-                        <li><i class="fa-regular fa-credit-card"></i> MASTER CARD</li>
-                        <li><i class="fa-regular fa-credit-card"></i> YAPE</li>
-                    </ul>
-                </article>
-
-                <article>
-                    <h2>FOLLOW US</h2>
-                    <ul>
-                        <li><i class="fa-brands fa-square-facebook"></i> FACEBOOK</li>
-                        <li><i class="fa-brands fa-square-instagram"></i> INSTAGRAM</li>
-                        <li><i class="fa-brands fa-youtube"></i> YOUTUBE</li>
-                    </ul>
-                </article>
-            </div>
-            
+    <footer class="mt-52">
+        <section class="max-w-screen-xl mx-auto mt-5 mb-5">
+            <article>
+                <h2>CONTACT</h2>
+                <ul>
+                    <li><i class="fa-regular fa-envelope mr-1"></i>info@perudestiny.com</li>
+                </ul>
+            </article>
         </section>
     </footer>
 
