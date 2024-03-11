@@ -22,7 +22,7 @@
         h3 {
             font-family: 'Arial', sans-serif;
         }
-        p {
+        p, .list-banner li {
             font-family: 'Roboto', monospace;
         }
     </style>
@@ -70,7 +70,7 @@
                         <div class="w-[185px] h-[50px]">
                             <img src="{{ asset('images/logo.png') }}" alt="" class="pl-3 lg:pl-0 h-[100%]">
                         </div>
-                        <button type="button" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 md:hidden" x-on:click="open = !open">Menu</button>
+                        <button type="button" class=" bg-gradient-to-r hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg  px-5 py-2.5 text-center me-2 md:hidden text-black" x-on:click="open = !open"><i class="fa-solid fa-bars text-3xl"></i></button>
                     </div>
                     <nav class="hidden md:block justify-center pt-3">
                         <ul class="text-sm">
@@ -78,13 +78,13 @@
                             <li class="inline-block font-semibold uppercase"><a href="#" class="h-8 inline-block py-0 px-3 text-[#1a4c82] relative m-0 border-none align-baseline bg-transparent after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:w-[0%] after:h-1 after:block after:bg-[#223f77] after:transition-all after:duration-300 hover:after:w-11/12 hover:after:left-[5%]">TOURS A MACHUPICCHU</a></li>
                             <li class="inline-block font-semibold uppercase"><a href="#" class="h-8 inline-block py-0 px-3 text-[#1a4c82] relative m-0 border-none align-baseline bg-transparent after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:w-[0%] after:h-1 after:block after:bg-[#223f77] after:transition-all after:duration-300 hover:after:w-11/12 hover:after:left-[5%]">TOURS 1 DÍA</a></li>
                             <li class="inline-block font-semibold uppercase has-submenu relative z-10 group">
-                                <span class="h-8 inline-block py-0 px-3 text-[#1a4c82] relative m-0 border-none align-baseline bg-transparent pr-10 before:content-['>'] before:rotate-90 before:absolute before:right-3 before:top-0 after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:w-[0%] after:h-1 after:block after:bg-[#223f77] after:transition-top after:duration-300 ease-in-out hover:after:w-11/12 hover:after:left-[5%]">PAQUETES</span>
-                                <ul class="list-unstyled absolute left-0 top-10 w-60 h-56 bg-[#fff] transition invisible after:transition-top after:duration-300 ease-in-out group-hover:visible group-hover:top-[30px] group-hover:h-auto rounded-lg">
-                                    <li class="block"><a class="text-[#544f4f] block leading-10 h-10 font-normal hover:bg-[#ddd] pl-2" href="#">LA EMPRESA</a></li>
+                                <span class="h-8 inline-block py-0 px-3 text-[#1a4c82] relative m-0 border-none align-baseline bg-transparent pr-10 before:content-['>'] before:opacity-30 before:rotate-90 before:absolute before:right-3 before:top-0 after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:w-[0%] after:h-1 after:block after:bg-[#223f77] after:transition-top after:duration-300 ease-in-out hover:after:w-11/12 hover:after:left-[5%]">PAQUETES</span>
+                                <ul class="list-unstyled absolute left-0 top-10 w-60 h-56 bg-[#f8f8f8] transition invisible after:transition-top after:duration-300 ease-in-out group-hover:visible group-hover:top-[32px] shadow group-hover:h-auto rounded-lg">
+                                    <li class="block"><a class="text-[#544f4f] block leading-10 h-10 font-normal hover:bg-[#ddd] hover:rounded-t-lg pl-2" href="#">LA EMPRESA</a></li>
                                     <li class="block"><a class="text-[#544f4f] block leading-10 h-10 font-normal hover:bg-[#ddd] pl-2" href="#">GALERIA DE FOTOS</a></li>
                                     <li class="block"><a class="text-[#544f4f] block leading-10 h-10 font-normal hover:bg-[#ddd] pl-2" href="#">DEPARTAMENTO</a></li>
                                     <li class="block"><a class="text-[#544f4f] block leading-10 h-10 font-normal hover:bg-[#ddd] pl-2" href="#">HABITACIONES</a></li>
-                                    <li class="block"><a class="text-[#544f4f] block leading-10 h-10 font-normal hover:bg-[#ddd] pl-2" href="#">HABITACIONES</a></li>
+                                    <li class="block"><a class="text-[#544f4f] block leading-10 h-10 font-normal hover:bg-[#ddd] hover:rounded-b-lg pl-2" href="#">HABITACIONES</a></li>
                                 </ul>
                             </li>
                             <li class="inline-block font-semibold uppercase"><a class="h-8 inline-block py-0 px-3 text-[#1a4c82] relative m-0 border-none align-baseline bg-transparent after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:w-[0%] after:h-1 after:block after:bg-[#223f77] after:transition-all after:duration-300 hover:after:w-11/12 hover:after:left-[5%]" href="#">SOBRE NOSOTROS</a></li>
@@ -123,8 +123,20 @@
 
     <main class="overflow-x-hidden">
         <section class="w-full p-0 relative z-0">
-            <div class="w-full">
-                <img src="{{ asset('images/mapi2.jpg') }}" alt="" class="w-full p-0 h-lg-[90vh]">
+            <div class="w-full relative overflow-hidden before:content-[''] before:block before:w-full before:h-full before:bg-black before:opacity-[0.3] before:absolute">
+                <img src="{{ asset('images/mapi2.jpg') }}" alt="PERÚ DESTINY AGENCY" class="w-full p-0 h-lg-[90vh] hover:scale-110 transition-all duration-300">
+            </div>
+            {{-- -translate-x-1/2  --}}
+            <div class="max-w-[400px] absolute top-1/2 left-[24px] transform -translate-y-1/2 text-white xl:max-w-[500px] xl:text-[red] xl:left-[60px] 2xl:text-[white] 2xl:max-w-[600px] 2xl:leading-relaxed">
+                <h1 class="mb-1 sm:mb-2 text-lg sm:text-2xl md:text-4xl 2xl:text-5xl xl:mb-4 2xl:mb-6 font-bold">PERÚ DESTINY AGENCY</h1>
+                <p class="mb-1 sm:mb-2 sm:text-base text-sm 2xl:mb-2 xl:mb-4 font-bold">¡Somos PERÚ DESTINY AGENCY! Confíe en nosotros para hacer de su aventura en Perú una experiencia inolvidable...</p>
+                <p class="mb-1 sm:mb-2 text-sm sm:text-base 2xl:mb-2 xl:mb-4 hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae incidunt quasi repellendus ab, labore culpa voluptates enim numquam. Natus, odio aperiam!</p>
+                <p class="hidden sm:block">Nos destacamos por ofrecer : </p>
+                <ul class="hidden sm:block mb-2 ml-4 list-disc xl:mb-4 2xl:mb-3 list-banner font-light">
+                    <li class="text-sm sm:text-base"><strong class="font-bold">Servicios de calidad</strong> excepcional, diseñados para satisfacer sus necesidades.</li>
+                    <li class="text-sm sm:text-base">Un equipo dedicado de <strong class="font-bold">profesionales apasionados</strong> por el servicio al cliente.</li>
+                </ul>
+                <a href="" class="text-base border outline-2 hover:bg-white hover:text-black transition-all duration-300 text-white px-5 py-2 rounded-lg w-[130px] flex items-center black md:text-lg">Contactos</a>
             </div>
         </section>
 
@@ -132,8 +144,8 @@
         {{-- BEST TRAVEL --}}
         <section class="mt-16">
             <article class="max-w-screen-xl mx-auto mt-5 mb-5 relative z-0">
-                <h2 class="before:content-[''] before:w-24 before:h-1 before:bg-[#74B05F] before:absolute before:left-1/2 before:top-[-20px] before:translate-x-[-3rem] before:rounded relative text-center text-xl text-lg-3xl max-w-[800px] m-auto">THE <strong class="text-[#74B05F]">BEST</strong> <strong class="text-[#74B05F]">TOUR</strong></h2>
-                <p class="text-center max-w-[1200px] m-auto mt-8 leading-relaxed px-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2 class="before:content-[''] before:w-24 before:h-1 before:bg-[#74B05F] before:absolute before:left-1/2 before:top-[-20px] before:translate-x-[-3rem] before:rounded relative text-center text-xl text-lg-3xl max-w-[800px] m-auto">LOS <strong class="text-[#74B05F]">TOURS MÁS POPULARES</strong></h2>
+                <p class="text-center max-w-[1200px] m-auto mt-8 leading-relaxed px-3">Presentamos nuestra exclusiva lista de los <strong class="font-bold">tours más populares</strong>, diseñados para llevarte a un viaje inolvidable lleno de descubrimientos y experiencias auténticas. Sumérgete en la riqueza cultural, la belleza natural y la historia fascinante que solo Perú puede ofrecer. ¡Descubre la magia del Perú con nosotros!</p>
             </article>
         </section>
 
@@ -291,14 +303,14 @@
         {{-- BEST TRAVEL SLIDER --}}
         <section class="mt-16">
             <article class="max-w-screen-xl mx-auto mt-5 mb-5 relative z-0">
-                <h2 class="before:content-[''] before:w-24 before:h-1 before:bg-[#74B05F] before:absolute before:left-1/2 before:top-[-20px] before:translate-x-[-3rem] before:rounded relative text-center text-xl text-lg-3xl max-w-[800px] m-auto">THE <strong class="text-[#74B05F]">BEST</strong> <strong class="text-[#74B05F]">TOUR</strong></h2>
+                <h2 class="before:content-[''] before:w-24 before:h-1 before:bg-[#74B05F] before:absolute before:left-1/2 before:top-[-20px] before:translate-x-[-3rem] before:rounded relative text-center text-xl text-lg-3xl max-w-[800px] m-auto">TOURS <strong class="text-[#74B05F]">FULL DAY (1 DÍA)</strong></h2>
                 <p class="text-center max-w-[1200px] m-auto mt-8 leading-relaxed px-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             </article>
         </section>
 
         <section class="max-w-screen-xl mx-auto mt-5 mb-5 flex justify-center px-10">
             <div class="wrapper">
-                <i id="left" class="buttons fa-solid fa-angle-left z-50 bg-[#305AAB]"></i>
+                <i id="left" class="buttons fa-solid fa-angle-left z-10 bg-[#74B05F]"></i>
                 <ul class="carousel">
                     
                     <li class="card pb-2">
@@ -450,7 +462,7 @@
 
                     
                 </ul>
-                <i id="right" class="buttons fa-solid fa-angle-right"></i>
+                <i id="right" class="buttons fa-solid fa-angle-right bg-[#74B05F]"></i>
             </div>
         </section>
         {{-- BEST TRAVEL SLIDER --}}
@@ -544,7 +556,7 @@
         <section>
             <img src="{{ asset('images/footer.jpg') }}" alt="">
         </section>
-        <section class="max-w-screen-xl mx-auto mt-5 mb-5 pt-5 text-[#e8e8e8]">
+        <section class="max-w-screen-xl mx-auto mt-5 mb-5 pt-5 text-[#e8e8e8] px-2">
             <section class="flex flex-col md:flex-row items-center md:justify-between md:items-start">
                 
 
